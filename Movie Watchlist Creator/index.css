@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  left: 100;
+}
+
+.App{
+  overflow-y:scroll;
+  overflow-x:scroll;
+}
+
+.left{
+  max-width: 80%;
+  overflow-y:scroll;
+}
+
+header{
+  padding: 50px 15px 0px;
+}
+
+h1{
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.left p{
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 15px;
+  line-height: 20px;
+}
+
+main{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.searchBx{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: none;
+
+  transition: 0.4 ease-out;
+  
+}
+
+.searchBxwrp{
+  padding-left:15px;
+  padding-right: 15px;
+}
+
+.searchBx:focus{
+  box-shadow: 0px 0px 8px;
+}
+
+.results{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px-15px;
+}
+
+.results .result{
+  width: 200px;
+  min-width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.results .result img{
+  display: block;
+  width: 200px;
+}
+
+.results .result h3{
+  font-size:15px;
+  padding: 10px;
+  width:200px;
+  background: #445565;
+  transition: 0.4s ease-out;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.results .result:hover h3{
+  background: #FFF;
+  color: #2f2ab0;
+}
+
+.popup{
+  position: fixed;
+  top: 100px;
+  left: 25%;
+  width: 600px;
+  height: 500px;
+  background-color: #445565;
+  overflow-y: scroll;
+  
+}
+
+.right{
+  position: fixed;
+  top: 0;
+  left: 80%;
+  width: 300px;
+  height: 100%;
+  background-color: #f5f7fa;
+  overflow-y: scroll;
+}
+
+.popup .details{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  color: #FFF;
+  padding: 15px;
+}
+
+.popup .details img{
+  width:180px;
+  margin-left:35%;
+}
+
+.popup .details h2{
+  font-size: 20px;
+  font-weight: 50;
+  text-align: center;
+}
+
+.popup .details p{
+  font-size: 15px;
+  padding-top: 10px;
+}
+.popup .details .close{
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  appearance: none;
+  transition: 0.4 ease-out;
+  margin-left: 120px;
+
+}
+
+.popup .details .favorite{
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  appearance: none;
+  transition: 0.4 ease-out;
+
+}
+
+.popup .details .close:hover {
+  background: #223343;
+  cursor: pointer;
+}
+
+.popup .details .favorite:hover {
+  background: #223343;
+  cursor: pointer;
+}
+
+.right h1{
+  font-size: 50px;
+  background-color:#8ea5b4;
+}
+
+.right p{
+  padding-top: 10px;
+}
+
+
+
+
+
