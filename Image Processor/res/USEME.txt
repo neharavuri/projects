@@ -1,0 +1,79 @@
+Text based commands that this application supports:
+ 1. load 'image-path' 'image-name': loads an image from the specified 'image-path'
+    into the program.This image can be referenced henceforth in the  program by the given
+    'image-name'
+    *Example usage: load res/flower.ppm flower*
+
+ 2. save 'image-path' image-name': saves an image with the given 'image-name' in
+    the program to the specified 'image-path'
+    *Example usage: save res/newFlower.ppm flower*
+
+ 3. 'component-name'-component 'image-name' 'dest-image-name': creates a greyscale
+     image with the 'component-name'(can be red, green, blue, value, intensity or luma)
+     component of the image specified by 'image-name'. This new version of the
+     image can now be referenced in the program by the given 'dest-image-name'.
+     *Example usage: red-component flower redFlower*
+
+ 4. horizontal-flip 'image-name' 'dest-image-name': flips the image specified by
+    'image-name' horizontally and saves this new version in the program as 'dest-image-name'
+    *Example usage: horizontal-flip flower hFlipFlower*
+
+ 5. vertical-flip 'image-name' 'dest-image-name': flips the image specified by
+   'image-name' vertically and saves this new version in the program
+    as 'dest-image-name'
+    *Example usage: vertical-flip flower vFlipFlower*
+
+
+ 6. brighten 'increment' 'image-name' 'dest-image-name': brighten the image by the
+    given positive 'increment' to create a new image, referred to by the given
+    'dest-image-name'. The increment may be positive (brightening) or negative
+    (darkening). if the increment is 0, the image will not be processed
+    *Example usage: brighten flower brighterFlower*
+
+ 7. blur 'image-name' 'dest-image-name': blurs the image specified by
+    'image-name' and saves this new version in the program as 'dest-image-name'. this operation
+    can happen on the same image multiple times to blur it more
+    *Example usage: blur flower blurFlower*
+
+ 8. sharpen 'image-name' 'dest-image-name': sharpens the image specified by 'image-name' and
+    saves this new version in the program as 'dest-image-name'. this operation can happen on the
+    same image multiple times to sharpen it more
+    *Example usage: sharpen flower sharpFlower*
+
+ 9. greyscale 'image-name' 'dest-image-name': produces a greyscale version of image specified
+    by 'image-name' and saves this new version in the program as dest-image-name'.
+    *Example usage: greyscale flower greyFlower*
+
+ 10. sepia 'image-name' 'dest-image-name': produces a sepia version of "image specified by
+    'image-name' and saves this new version in the program as 'dest-image-name'.
+     *Example usage: sepia flower saveSepia*
+
+ 11. q : quits the program
+
+
+
+GUI based commands that this program supports:
+ 1. To load an image, click on the load button on the left hand side. This
+    opens up a file explorer that lets you choose from a variety of images
+    to load into the system. The system only supports ppm, bmp, jpg and png
+    images at this point so these are the only images that can be loaded
+ 2. Then, to perform any operation, choose from the drop down menu at the bottom
+    of the screen. The choices for commands are: brighten, flip horizontally, flip vertically,
+    visualize red, visualize green, visualize blue, visualize luma, visualize value,
+    visualize intensity, blur, sharpen, apply greyscale, apply sepia and downsize.
+    For brighten, there will be a pop up window that asks for a scale to brighten/darken
+    by. You have to enter a non zero integer as a scale, and the program will not
+    take the input if it 0 or not an integer. Similarly, for downscale, you have to
+    put in a height and width that you want to downsize to. If the height or width are
+    not positive integers or are bigger than the size of the current image, the program
+    will throw an error and not take your input
+ 3. Finally, to save your image, choose the save button on the left hand side.
+    This will once again open a file explorer and let you choose a place to save this
+    image.
+ 4. To exit the program, click the red X in the top right.
+
+Conditions for using the command:
+   "load" should be used before performing any other command on a picture
+   otherwise it will throw an error. After an image is loaded, you can only
+   refer to that image with the name you specified. If you want to edit a different
+   image that image must then be loaded into the system.
