@@ -1,0 +1,59 @@
+load res/flower.jpg flower
+
+brighten 100 flower flower-brighter
+
+brighten -50 flower flower-darker
+
+horizontal-flip flower flower-flipH
+
+vertical-flip flower flower-flipV
+
+green-component flower flower-green
+
+blue-component flower flower-blue
+
+red-component flower flower-red
+
+luma-component flower flower-luma
+
+intensity-component flower flower-intensity
+
+value-component flower flower-value
+
+sepia flower flower-sepia
+
+greyscale flower flower-greyscale
+
+blur flower flower-blur
+
+sharpen flower flower-sharpen
+
+save flowerBrighter.ppm flower-brighter
+
+save flowerDarker.ppm flower-darker
+
+save flowerFlippedHorizontally.ppm flower-flipH
+
+save flowerFlippedVertically.ppm flower-flipV
+
+save flowerGreen.jpg flower-green
+
+save flowerBlue.ppm flower-blue
+
+save flowerRed.ppm flower-red
+
+save flowerValue.bmp flower-value
+
+save flowerIntensity.ppm flower-intensity
+
+save flowerLuma.ppm flower-luma
+
+save flowerGrey.png flower-greyscale
+
+save flowerBlur.ppm flower-blur
+
+save flowerSharpen.ppm flower-sharpen
+
+save flowerSepia.jpg flower-sepia
+
+q
